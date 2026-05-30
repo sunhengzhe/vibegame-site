@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Zpix";
+  src: url("/fonts/zpix.woff2") format("woff2");
+  font-display: swap;
+}
+
+:root {
+  --font-pixel: "Zpix";
+  --font-display: "Arial Rounded MT Bold";
+  --font-body: ui-sans-serif, system-ui, sans-serif;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: #f8f2e9;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.site-grid {
+  background-image:
+    linear-gradient(rgba(17, 24, 39, 0.08) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(17, 24, 39, 0.08) 2px, transparent 2px);
+  background-size: 56px 56px;
+  mask-image: linear-gradient(to bottom, black, transparent 84%);
+}
